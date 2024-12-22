@@ -2,7 +2,7 @@
 LDT "Entrer un Enrier : "
 STA 020 ; N
 STA 021 ; F
-INC 030 ; i++
+INC 030 ; i = 1
 
 LDA 020
 CMP 030 ; Si ( N = i )
