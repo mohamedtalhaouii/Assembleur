@@ -5,8 +5,8 @@ STA 021 ; F
 INC 030 ; i = 1
 
 LDA 020
-CMP 030 ; Si ( N = i )
-JEQ 00F
+CMP 030 
+JEQ 00F ; Si ( N = i )
 
 LDA 020
 CMP 030
