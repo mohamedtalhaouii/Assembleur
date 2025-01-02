@@ -10,7 +10,7 @@ JEQ 00F ; Si ( N = i )
 
 LDA 020
 CMP 030
-JME 00A ; Si( N > i )
+JME 00A ; Si( N < i )
 LDA 021
 MUL 030 ; F = F * i
 STA 021
