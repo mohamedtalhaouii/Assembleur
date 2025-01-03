@@ -2,44 +2,44 @@
 MSG "Calcule L'expression A - B/(C + D) + E * F - G"
 
 LDT "Etrer la valeur de A :"
-STA 40
+STA 040
 LDT "Etrer la valeur de B :"
-STA 41
+STA 041
 LDT "Etrer la valeur de C :"
-STA 42
+STA 042
 LDT "Etrer la valeur de D :"
-STA 43
+STA 043
 LDT "Etrer la valeur de E :"
-STA 44
+STA 044
 LDT "Etrer la valeur de F :"
-STA 45
+STA 045
 LDT "Etrer la valeur de G :"
-STA 46
+STA 046
 
-LDA 42
-ADD 43 ;C + D
-STA 42
+LDA 042
+ADD 043 ;C + D
+STA 042
 
-LDA 41
-DIV 42 ;B/(C + D)
-STA 42
+LDA 041
+DIV 042 ;B/(C + D)
+STA 042
 
-LDA 44
-MUL 45 ;E * F
-STA 44
+LDA 044
+MUL 045 ;E * F
+STA 044
 
-LDA 40
-SUB 42 ;A - B/(C + D)
-STA 42
+LDA 040
+SUB 042 ;A - B/(C + D)
+STA 042
 
-LDA 42
-ADD 44 ;A - B/(C + D) + E * F
-STA 44
+LDA 042
+ADD 044 ;A - B/(C + D) + E * F
+STA 044
 
-LDA 44
-SUB 46 ;A - B/(C + D) + E * F - G
-STA 46
+LDA 044
+SUB 046 ;A - B/(C + D) + E * F - G
+STA 046
 
-LDA 46
+LDA 046
 EAP
 HLT
