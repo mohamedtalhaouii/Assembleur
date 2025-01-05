@@ -15,7 +15,7 @@ LDA 030
 CMP 031
 JMA 00F ;Sauter Si A > B
 MSG "A est Plus Petite que B"
-JMP 010 ;;Fin
+JMP 010 ;Fin
 
 MSG "A est Plus Grande que B"
 HLT
